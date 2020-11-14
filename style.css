@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+:root{
+	font-family: Be Vietnam;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	--dark-txt: hsl(228, 39%, 23%);
+	--light-txt: hsl(227, 12%, 61%);
+	--bg-orange: hsl(12, 88%, 59%);
+	--bg-grey: hsl(0, 0%, 98%);
+	--bg-yellow: hsl(40, 50%, 96%);
+	--bg-pink: hsl(13, 100%, 96%);
+
+	color: var(--dark-txt);
+}
+html *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	align-self: center;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+p, li{
+	color: var(--light-txt);
+	padding-bottom: 40px;
+}
+p{
+	max-width: 350px;
+}
+h1{
+	font-size: 3.5rem;
+	line-height: 4rem;
+	padding: 40px 0;
+}
+h2{
+	font-size: 2.5rem;
+	line-height: 3rem;
+	padding-bottom: 30px;
+}
+h3{
+	font-size: 1rem;
+	line-height: 1rem;
+	padding-bottom: 20px;
+	color: var(--dark-txt);
+}
+ol, ul{
+	list-style: none;
+}
+.button, li:before{
+	display: inline-block;
+	padding: 8px 30px;
+	background-color: var(--bg-orange);
+	color: #fff;
+	font-weight: 700;
+	font-size: .8rem;
+	border-radius: 50px;
+	box-shadow: 0 10px 20px -10px var(--bg-orange);
+}
+.button.white{
+	color: var(--bg-orange);
+	background-color: #fff;
+	box-shadow: unset;
+}
+body{
+	background-color: var(--bg-grey);
+}
+body > *{
+	display: grid;
+	grid-template-columns: [full-start] 1fr [margin-start] 1150px [margin-end] 1fr [full-end];
+}
+section{
+	grid-column: margin-start / margin-end;
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: space-between;
+	margin-bottom: 90px;
+}
+header{
+	padding-top: 60px;
+	font-weight: 500;
+}
+nav ul{
+	display: flex;
+}
+nav li{
+	padding-left: 25px;
+	font-size: .9rem;
+}
+.hero > div, .list > div{
+	align-self: stretch;
+}
+.list > *{
+	flex: 0 0 50%;
+}
+.list li{
+	counter-increment: int;
+	margin-left: 130px;
+	position: relative;
+}
+.list li::before{
+	content: "0" counter(int);
+	display: inline-block;
+	position: absolute;
+	left: -100px;
+	top: 0;
+	font-size: 1rem;
+	line-height: 1rem;
+	padding: 12px 25px;
+	box-shadow: unset;
+}
+section.slider, section.simplify{
+	grid-column: full-start / full-end;
+}
+.slider{
+	display: block;
+}
+.slider h2{
+	text-align: center;
+}
+.splide{
+	margin-top: 70px;
+}
+.splide__slide > div{
+	width: 100%;
+	background-color: var(--bg-yellow);
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 30px 0;
+	position: relative;
+}
+.slider img{
+	position: absolute;
+	top: -40px;
+	width: 80px;
+}
+.slider h3{
+	padding-top: 30px;
+}
+.slider p{
+	max-width: 100%;
+}
+.slider > .btn-cont{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.splide__pagination, .splide__arrows{
+	display: none;
+}
+.simplify{
+	background-color: var(--bg-orange);
+	background-image: url(./images/bg-simplify-section-desktop.svg);
+	background-size: cover;
+	height: 200px;
+}
