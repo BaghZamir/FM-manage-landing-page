@@ -2,6 +2,19 @@
 
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
+## Bagh's Notes:
+
+I chose this challenge because it showcases both use of complex CSS and inclusion and understanding of foreign code.
+
+This landing page has a slider near the bottom, which I found online and implemented. (Splide slider)
+I built the HTML structure to Splide's specs and added required options and mounting for the slider in a JS script. This also changes based on screen width.
+
+The CSS uses CSS grid, flexbox, and also vars, which is underutilised in CSS. This adds flexibility to the code and simplifies changes.
+
+My main plan was to make this site completely responsive with as few breakpoints as possible, while at the same time stick to the design provided. The design was mainly made for 1440px width and smaller, but my responsive code does a decent job at higher and inbetweens. There are some breakpoints to match it to design and to add the custom mobile menu.
+
+Below follows all the details of the challenge from Frontend Mentor.
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
