@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./inc/splide.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,15 +11,18 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: var(--bg-orange); }
   </style>
 </head>
 
 <body>
+  <div class="bg-decor decor1"></div>
+  <div class="bg-decor decor2"></div>
   <header>
     <section>
-      <img src="./images/logo.svg" alt="Manage logo">
+      <img class="logo" src="./images/logo.svg" alt="Manage logo">
       <nav>
+        <div class="menu-cover"></div>
         <ul>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
@@ -27,8 +30,9 @@
           <li><a href="#">Careers</a></li>
           <li><a href="#">Community</a></li>
         </ul>
+        <a class="expand" alt="expand mobile menu"></a>
       </nav>
-      <a class="button" href="#">Get Started</a>
+      <a class="button desk" href="#">Get Started</a>
     </section>
   </header>
 
@@ -138,56 +142,58 @@
     </section>
 
     <section class="simplify">
-      <h2>Simplify how your team works today.</h2>
-      <a class="button white" href="#">Get Started</a>
+      <div>
+        <h2>Simplify how your team works today.</h2>
+        <a class="button white" href="#">Get Started</a>
+      </div>
     </section>
   </main>
 
   <footer>
     <section class="main-footer">
-      <div>
-        <img src="./images/logo.svg" alt="Manage logo">
+      <div class="some-wrapper">
+        <img src="./images/logowhite.svg" alt="Manage logo">
         <ul class="some">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
+          <li><a href="#"><img src="./images/icon-youtube.svg" alt="youtube"></a></li>
+          <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
+          <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a></li>
+          <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a></li>
         </ul>
       </div>
 
-      <div>
+      <div class="links-wrapper">
         <ul class="footer-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
-      <div>
+      </div>
   
-      <div>
+      <div class="links-wrapper">
         <ul class="footer-links">
           <li><a href="#">Careers</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
-      <div>
+      </div>
         
-      <div>
+      <div class="newsletter-wrapper">
         <form class="newsletter" method="POST">
           <!--according to EU Universal Design it is mandatory with a label and checkbox for consent-->
           <label>
             Fill in email to get updates in your inbox
-            <input type="email" name="mail" required>
+            <input type="email" name="mail" required placeholder="Fill in email to get updates">
           </label>
           <label>
             <input type="checkbox" name="consent" required>
             I have read the privacy policy and consent to recieving monthly newsletters
           </label>
-          <input type="submit" value="Go" >
+          <input type="submit" value="Go" class="button">
         </form>
         <p class="copyright">Copyright 2020. All Rights Reserved</p>
-      <div> 
+      </div> 
     </section>
 
     <section class="sub-footer">

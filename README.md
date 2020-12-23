@@ -13,6 +13,8 @@ The CSS uses CSS grid, flexbox, and also vars, which is underutilised in CSS. Th
 
 My main plan was to make this site completely responsive with as few breakpoints as possible, while at the same time stick to the design provided. The design was mainly made for 1440px width and smaller, but my responsive code does a decent job at higher and inbetweens. There are some breakpoints to match it to design and to add the custom mobile menu.
 
+Finally the newsletter signup form in footer deviates from the design with added label and consent checkbox. This is done fulfill compliance with universal design of ICT (label) and GDPR (consent).
+
 Below follows all the details of the challenge from Frontend Mentor.
 
 ## Welcome! 👋
